@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Form</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ab8baff07d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Registration<h1 style="text-align:center; color: rgb(183, 226, 243);">التسجيل</h1></h1>
+
+          <img src="img/400PngdpiLogo.png" alt="logo" width="500" class="responsive" >
+
+         <h2>Personnel information:</h2> 
+      
+        <p>"When submit,you should recieve a respond message informs you: Successfuly transmitted"</p>
+
+        <div class="container">
+            <form>
+            <i class="fa-regular fa-paper-plane"></i>
+             <fieldset>
+       <legend><h5>Fill the form here</h5></legend>
+
+  
+       <p>Gender:
+      <input type="radio" name="gender" value="male">Male
+     <input type="radio" name="gender" value="female">Female
+        </p>
+
+      
+
+        <div class="input-group">
+            <label>Name: </label>
+            <input type="text" placeholder=" Enter your name"  id="contact-name" onkeyup="validateName()">
+            <span id="name-error"></span>
+        </div>
+
+        <div class="input-group">
+            <label>Fname: </label>
+            <input type="text" placeholder="your first name" id="contact-firstname" onkeyup="validateFirstname()">
+            <span id="firstname-error"></span>
+        </div>
+
+        <div class="input-group">
+            <label>Date of birth: </label>
+            <input type="date"  placeholder="date" id="contact-date" onkeyup="validateDate()">
+            <span id="date-error"></span>
+        </div>
+
+        <div class="input-group">
+            <label>Phone: </label>
+            <input type="tel" placeholder="1234567890" id="contact-phone" onkeyup="validatePhone()">
+            <span id="phone-error"></span>
+        </div>
+
+        <div class="input-group">
+            <label>Email: </label>
+            <input type="email" placeholder="Enter your email" id="contact-email" onkeyup="validateEmail()"> 
+             <span id="email-error"></span>
+        </div>
+        
+        <div class="input-group">
+            <label>Repeat email: </label>
+            <input type="email" placeholder="repeat your email"  id="contact-email" onkeyup="validateEmail()">
+            <span id="email-error"></span>
+            </div>
+
+            <div class="input-group">
+            <label> Message: </label>
+            <textarea rows="5" placeholder="Enter your message" id="contact-message" onkeyup="validateMessage()"></textarea>
+            <span id="message-error"></span>
+       </div>
+
+<button onclick="return validation()">Submit</button>
+<span id="submit-error"></span>
+
+</fieldset>
+<h6>If all have been done correctly conformation: transmition Success.</6>
+    </form>
+    </div>
+    <br>
+
+    <footer class="footer">
+    
+        <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+        <span class="nowrap">IdyllAc</span>
+    
+    </footer>
+
+   
+    <script src="./script.js"></script>
+</body>
+</html>
+
