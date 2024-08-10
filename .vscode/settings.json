@@ -1,0 +1,7 @@
+{
+ "php.version": "v8.2",
+ "php-cs-fixer.onsave": true,
+ "php-cs-fixer.autoFixByBracket": true,
+ "php-tdd.enablePHPExtensions": true,
+ "php-tdd.enableAutoRun": true
+}
