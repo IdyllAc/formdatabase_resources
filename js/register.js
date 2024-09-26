@@ -147,7 +147,7 @@ function validatePw() {
 
 
  function validateForm(){
-    if (!validateName() || !validatefirstName() || !validateDate() || !validatePhone() || !validateMail() || !validatePassword() ||  !validateMessage()) {
+    if (!validateName() || !validatefirstName() || !validateDate() || !validatePhone() || !validateMail() || !validatePassword()) {
     submitError.style.display = 'block'
     submitError.innerHTML = 'Please fix error to submit';
     setTimeout(function () { submitError.style.display = 'none';}, 3000);

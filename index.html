@@ -19,15 +19,16 @@
 
         <img src="./img/400PngdpiLogo.png" alt="logo" width="" class="responsive">
 
-        <h2>Personnel information:</h2>
+        
 
-        <p>"When submit, you should recieve a respond message informs you: Successfuly transmitted"</p>
+        <!-- <p>"When submit, you should recieve a respond message informs you: Successfuly transmitted"</p> -->
 
 
         <div class="container">
 
             <form action="connect.php" method="post">
                 <i class="fa-regular fa-paper-plane"></i>
+                <h2>Personnel Information</h2>
                 <h5>Fill & send your form here</h5>
 
                 <div class="genderContainer">
@@ -68,7 +69,7 @@
                     <div class="input-group">
                         <label>
                             Phone:
-                            <input type="tel" id="phone" name="phone" maxlength="10" placeholder="+1 (234) 567890"
+                            <input type="tel" id="phone" name="phone" maxlength="10" placeholder="+1(234) 567890"
                                 onkeyup="validatePhone()" autocomplete="off" required>
                             <span id="phone-error"></span>
                         </label>
@@ -78,7 +79,7 @@
                         <label>
                             Email:
                             <input type="text" class="form-control" id="email" name="email" maxlength="150"
-                                placeholder="Enter your email" onkeyup="validateEmail()" autocomplete="off">
+                                placeholder="Enter your email" onkeyup="validateMail()" autocomplete="off">
                             <span id="email-error"></span>
                         </label>
                     </div>
@@ -95,8 +96,8 @@
                     <div class="input-group">
                         <label>
                             Password:
-                            <input type="password" class="form-control" id="pwd" name="pwd" maxlenght="10"
-                                placeholder="Fill pwd" autocomplete="off" onkeyup="validatePwd()" autocomplete="off">
+                            <input type="password" class="form-control" id="password" name="password" maxlenght="10"
+                                placeholder="Fill password" autocomplete="off" onkeyup="validatePassword()" autocomplete="off">
                             <span id="password-error"></span>
                         </label>
                     </div>
@@ -104,13 +105,13 @@
                     <!-- <div class="input-group">
                             <label>
                                 Cpwd: 
-                            <input type="cpassword" class="form-control" id="cpwd" name="cpwd" maxlenght="10" placeholder="Fill cpwd"
-                                 onkeyup="validatePwd()" autocomplete="off">
+                            <input type="cpassword" class="form-control" id="cpassword" name="cpassword" maxlenght="10" placeholder="Fill cpassword"
+                                 onkeyup="validatePassword()" autocomplete="off">
                             <span id="cpwd-error"></span> 
                         </label>
                         </div>-->
 
-                    <div class="input-group">
+                    <!-- <div class="input-group">
                         <label>
                             Message:
                             <textarea type="text" id="textarea" name="textarea" rows="5"
@@ -118,22 +119,20 @@
                                 autocomplete="off"></textarea>
                             <span id="message-error"></span>
                         </label>
-                    </div>
+                    </div> -->
 
+                    <br>
                     <button onclick="return validation()">Submit</button>
                     <span id="submit-error"></span>
 
-
-                    </fieldset>
-                    <h6>If all have been done correctly conformation: transmition Success.</6>
+                    <h6>If all have been done correctly a conformation message you should recieve that informs you. "Successfuly transmitted."</6>
             </form>
         </div>
         <br>
 
-        <footer class="footer">
-
+         <!-- <footer class="footer">
             <span class="nowrap">Copyright &copy; <time id="year">IdyllAc</time></span>
-        </footer>
+        </footer>  -->
         <script src="js/register.js"></script>
     </body>
 

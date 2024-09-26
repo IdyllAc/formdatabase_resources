@@ -23,7 +23,7 @@ die("Connection failed: " . $conn->connect_error);
        $phone = $_POST["phone"];
        $email = $_POST["email"];
        // $cemail = $_POST ["cemail"] ;
-       $ppassword = $_POST["password"];
+       $password = $_POST["password"];
        // $cpassword =  $_POST ["cpassword"];
      
 
