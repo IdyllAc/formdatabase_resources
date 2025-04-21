@@ -27,9 +27,8 @@ die("Connection failed: " . $conn->connect_error);
        // $cpassword =  $_POST ["cpassword"];
      
 
-       // Insert data into database
-            // Insert data into database
-         $sql = "INSERT INTO users (gender, name, firstname, date, phone, email, password) VALUES ('$gender', '$name', '$firstname', '$date', '$phone', '$email', '$password')"; 
+// Insert data into database
+        $sql = "INSERT INTO users (gender, name, firstname, date, phone, email, password) VALUES ('$gender', '$name', '$firstname', '$date', '$phone', '$email', '$password')"; 
 
          // echo "<br>";
          if ($conn->query($sql) === TRUE) {
